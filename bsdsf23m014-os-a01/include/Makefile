@@ -1,11 +1,11 @@
-header = mystrfunctions.h myfilefunctions.h
+# include/Makefile
+HEADERS = mystrfunctions.h myfilefunctions.h
 
 .PHONY: all clean
 
 all:
-	@echo "Header files: $(header)"
+	@echo "Headers are available: $(HEADERS)"
 
 clean:
-	@echo "nothing to clean:"
-
+	@echo "Nothing to clean in include/"
 
