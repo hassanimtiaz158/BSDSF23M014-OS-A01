@@ -1,7 +1,11 @@
-header=mystrfunctions.h myfilefunctions.h
+header = mystrfunctions.h myfilefunctions.h
+
 .PHONY: all clean
 
 all:
- @echo "Headers files: $(header)"
+	@echo "Header files: $(header)"
+
 clean:
- @echo "nothing to clean:"
+	@echo "nothing to clean:"
+
+
