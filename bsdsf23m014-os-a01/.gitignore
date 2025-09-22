@@ -5,8 +5,8 @@
 myprogram
 
 # Ignore build output directories
-/obj/
-/bin/
+#/obj/
+#/bin/
 /lib/
 
 # Ignore temporary / backup files (from editors like nano, vim)
