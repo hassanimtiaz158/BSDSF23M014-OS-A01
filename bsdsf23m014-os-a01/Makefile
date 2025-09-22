@@ -1,17 +1,17 @@
-# Top-level Makefile
-
-.PHONY: all clean include src
+# Top-level Makefile (root)
+.PHONY: all include src lib clean
 
 all: include src
-	@echo "Build complete!"
+	@echo "Root build complete."
 
 include:
-	$(MAKE) -C include
+	@echo "Include folder (headers) checked."
 
+# Call src Makefile (which builds objects and library and binary)
 src:
 	$(MAKE) -C src
 
 clean:
 	$(MAKE) -C src clean
-	$(MAKE) -C include clean
-	rm -rf bin/* obj/*
+	rm -rf bin/* obj/* lib/*
+	@echo "Top-level clean complete."
