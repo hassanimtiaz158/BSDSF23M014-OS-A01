@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -Wall -g -Iinclude
 LDFLAGS := 
-BIN := client   # <--- program will be called "client"
+BIN := client
 
 # find all .c files under bsdsf23m014-os-a01/src
 SRC := $(shell find bsdsf23m014-os-a01/src -type f -name '*.c' | sort)
